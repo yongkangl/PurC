@@ -1,6 +1,6 @@
 # PurC
 
-`PurC` is the prime HVML interpreter for C language.
+`PurC` is the prime HVML interpreter written in C language.
 
 **Table of Contents**
 
@@ -18,25 +18,22 @@
 
 ## Introduction
 
-`HVML` is a descriptive programming language proposed and designed by [Vincent Wei],
-    who is the author of the China-first open source project - [MiniGUI].
+`HVML` stands for 'Hybrid Virtual Markup Language', which is a descriptive programming language invented by [Vincent Wei] - the author of the first Chinese open-source software ([MiniGUI]).
 
-`PurC` is the acronym of `the Prime HVML inteRpreter for C language`.
-It is also the abbreviation of `Purring Cat`,
-   while `Purring Cat` is the nickname and the mascot of HVML.
+This interpreter implementation is expected to be the `Prime HVML interpreter for C language`, there is also a nickname `Purring Cat` for it, and `PurC` is the abbreviation.
 
-The goal of PurC is to implement all features defined by [HVML Specifiction V1.0]
-and all predefined dynamic objects defined by [HVML Predefined Variables V1.0] in C language.
+`PurC` targets a full implementation for [HVML Specification V1.0], contains all mandatory features and default objects defined in the specification.
 
-You can use PurC to run an HVML program or an HVML app by using the command line tool `purc`,
-    or use PurC as a library to build your own HVML interpreter.
+The build result of the sources in this repository contains:
+- Interpreter libraries for 3rd party interpreter implementations.
+- An CLI-based interpreter `purc` to run HVML programs.
+- HVML program examples and tests.
 
-We release PurC under LGPLv3, so it is free for commercial use if you follow the conditions and terms of LGPLv3.
+By now, `PurC` supports Linux and macOS. Windows support is ongoing. Other platforms' support contribution is open - welcome to contribute.
 
-This is the version 0.9.2 of PurC.
-By now, PurC provides support for Linux and macOS.
-The support for Windows is on the way.
-We welcome anyone to port PurC to other platforms.
+Check [Release note](RELEASE-NOTES.md) for detailed updates in per release.
+
+`PurC` is published under LGPLv3, it is free for commercial usage by following the conditions and terms of LGPLv3.
 
 To learn the basic concepts about HVML programming, please refer to the following tutorial:
 
@@ -78,8 +75,7 @@ To build PurC from source code, please make sure that the following tools or lib
 1. FLEX 2.6.4 or later
 
 Although the port for Windows is still on the way, it is possible to build PurC on Windows 10 version 2004 or later:
-You can install WSL (Windows Subsystem for Linux) and a Linux distribution, e.g., Ubuntu, on your Windows system,
-    then build PurC in Ubuntu environment.
+You can install WSL (Windows Subsystem for Linux) and a Linux distribution, e.g., Ubuntu, on your Windows system, then build PurC in Ubuntu environment.
 
 ### Building steps
 
